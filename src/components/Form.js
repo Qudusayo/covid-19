@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 class Form extends Component {
     render() {
         return (
-            <div style={{ marginTop: '20px' }}>
+            <div>
                 <form className="card p-2" onSubmit={this.props.getInfo}>
                     <div className="input-group">
                     <input type="text" name="country" autoComplete="off" className="form-control  text-capitalize" placeholder="COUNTRY"/>
