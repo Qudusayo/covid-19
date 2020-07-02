@@ -66,7 +66,7 @@ class Header extends Component {
                 <Form getInfo={this.getInfo}/>
             </div>
                 {this.state.country ?
-                <div className="row">
+                <div className="row container m-auto">
                     <Information classed="primary" value={this.state.country} title="COUNTRY"/>
                     <Information classed="warning" value={this.state.cases} title="CASES"/>
                     <Information classed="danger" value={this.state.todayCases} title="TODAY'S CASES"/>
