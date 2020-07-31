@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import Skeleton, { SkeletonTheme } from 'react-loading-skeleton'
 
 import Info from './Info';
 import Information from './Information';
@@ -44,25 +45,35 @@ class Header extends Component {
                 <h1 className="display-3">covid - 19</h1>
                 <p>2020 world pandemic disease</p>
                 </div><br/><br/>
-                {this.props.cases ?
-                    <div className="row">
-                        <Info 
-                            value={this.props.cases} 
-                            title='CASES' 
-                            classes='warning'
-                        />
-                        <Info
-                            value={this.props.deaths} 
-                            title='DEATHS'
-                            classes='danger
-                        '/>
-                        <Info 
-                            value={this.props.recovered} 
-                            title='RECOVERED' 
-                            classes='success'
-                        />
-                    </div> : null
-                }
+                <SkeletonTheme color="#bcbcbc" highlightColor="#a9a9a9">
+                        <div className="row">
+                            <Info
+                                value={this.props.cases || <Skeleton />}
+                                title={
+                                    this.props.cases ? "CASES" : <Skeleton />
+                                }
+                                classes="warning"
+                            />
+                            <Info
+                                value={this.props.deaths || <Skeleton />}
+                                title={
+                                    this.props.cases ? "DEATHS" : <Skeleton />
+                                }
+                                classes="danger"
+                            />
+                            <Info
+                                value={this.props.recovered || <Skeleton />}
+                                title={
+                                    this.props.cases ? (
+                                        "RECOVERED"
+                                    ) : (
+                                        <Skeleton />
+                                    )
+                                }
+                                classes="success"
+                            />
+                        </div>
+                    </SkeletonTheme>
                 <Form getInfo={this.getInfo}/>
             </div>
                 {this.state.country ?
