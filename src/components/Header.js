@@ -43,7 +43,7 @@ class Header extends Component {
             <div>
             <div className="jumbotron text-light" style={{ backgroundImage: `url("${banner}")`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
                 <div className="container text-center text-uppercase">
-                <h1 className="display-3 mb-0" style={{ fontFamily: 'Varta' }}>covid - 19</h1>
+                <h1 className="display-3 mb-0" style={{ fontFamily: 'Varta' }}>covid-19</h1>
                 <p className="mt-0" style={{ fontFamily: 'Varta' }}>2020 world pandemic disease</p>
                 </div><br/><br/>
                 <SkeletonTheme color="#bcbcbc" highlightColor="#a9a9a9">
