@@ -16,10 +16,10 @@ Runs the app in the development mode.<br />
 - Run the application from your Terminal
 
 # Overview:
-$ git clone https://github.com/Qudusayo/covid-19
-$ cd covid-19
-$ npm i
-$ npm start
+$ git clone https://github.com/Qudusayo/covid-19  
+$ cd covid-19   
+$ npm install   
+$ npm start  
 
 Open [http://localhost:3000](http://localhost:3000) or process.env.PORT<br/>
 
