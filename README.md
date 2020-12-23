@@ -5,8 +5,8 @@
 Use it for viewing live count of Discharged, Active and Deaths of Covid-19 patients.
 
 ## Screenshots
-<img src = "https://linkpicture.com/q/fst.png" height="300" width="300">
-<img src = "https://linkpicture.com/q/one.png" height="300" width="300">
+<img src = "https://i.ibb.co/GHdJVXy/image-2020-12-23-174003.png">
+<img src = "https://i.ibb.co/r5jkHDk/image-2020-12-23-174533.png">
 
 # Getting Started
 Runs the app in the development mode.<br />
